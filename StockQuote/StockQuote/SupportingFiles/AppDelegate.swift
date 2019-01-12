@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    //Creating the Initail Root View Controller 
+    //Creating the Initial Root View Controller 
     private func setupUI(){
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
