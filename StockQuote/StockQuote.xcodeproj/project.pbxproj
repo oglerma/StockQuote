@@ -14,6 +14,7 @@
 		E9D5547F21EA8E67002AD4B4 /* StockQuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5547E21EA8E67002AD4B4 /* StockQuoteTests.swift */; };
 		E9D5548A21EA8E67002AD4B4 /* StockQuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5548921EA8E67002AD4B4 /* StockQuoteUITests.swift */; };
 		E9D5549821EAA6D2002AD4B4 /* TableviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */; };
+		E9D5549C21EAAB0F002AD4B4 /* AutoLayoutExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549B21EAAB0F002AD4B4 /* AutoLayoutExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E9D5548921EA8E67002AD4B4 /* StockQuoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteUITests.swift; sourceTree = "<group>"; };
 		E9D5548B21EA8E67002AD4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewViewController.swift; sourceTree = "<group>"; };
+		E9D5549B21EAAB0F002AD4B4 /* AutoLayoutExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		E9D5546821EA8E66002AD4B4 /* StockQuote */ = {
 			isa = PBXGroup;
 			children = (
+				E9D5549A21EAAAE8002AD4B4 /* Core */,
 				E9D5549921EAA944002AD4B4 /* SupportingFiles */,
 				E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */,
 			);
@@ -131,6 +134,14 @@
 				E9D5546921EA8E66002AD4B4 /* AppDelegate.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E9D5549A21EAAAE8002AD4B4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5549B21EAAB0F002AD4B4 /* AutoLayoutExt.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D5549C21EAAB0F002AD4B4 /* AutoLayoutExt.swift in Sources */,
 				E9D5549821EAA6D2002AD4B4 /* TableviewViewController.swift in Sources */,
 				E9D5546A21EA8E66002AD4B4 /* AppDelegate.swift in Sources */,
 			);
