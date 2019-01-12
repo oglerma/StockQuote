@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TableviewViewController.swift
 //  StockQuote
 //
 //  Created by Ociel Lerma on 1/12/19.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
+    
+
 
 
 }
-
