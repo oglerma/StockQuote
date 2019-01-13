@@ -20,7 +20,6 @@ class TableviewViewController: UIViewController {
         let tabView = UITableView()
         tabView.delegate = self
         tabView.dataSource = self
-        tabView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         tabView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         return tabView
     }()
@@ -30,8 +29,18 @@ class TableviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationItem()
-        view.addSubview(tableView)
+        setupTableview()
         
+    }
+    
+    
+    private func setupTableview(){
+        view.addSubview(tableView)
+        tableView.anchors(top: nil, topPad: 0,
+                          bottom: nil, bottomPad: 0,
+                          left: self.view.leftAnchor, leftPad: 0,
+                          right: self.view.rightAnchor, rightPad: 0,
+                          height: self.view.frame.height, width: 0)
     }
     
     // Giving a title and some color to the initial page.
