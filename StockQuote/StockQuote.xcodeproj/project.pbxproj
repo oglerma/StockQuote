@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				E9D5549A21EAAAE8002AD4B4 /* Core */,
-				E9D5549921EAA944002AD4B4 /* SupportingFiles */,
 				E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */,
+				E9D5549921EAA944002AD4B4 /* SupportingFiles */,
 			);
 			path = StockQuote;
 			sourceTree = "<group>";
