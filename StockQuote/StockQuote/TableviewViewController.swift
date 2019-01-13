@@ -10,8 +10,8 @@ import UIKit
 
 class TableviewViewController: UIViewController {
 
-    let cellId = "cell"
-    
+    let cellId   = "cell"
+
     let publicCompanies = ["Nike", "Microsoft", "Google", "Amazon" ,
                            "eBay", "Walmart"  , "Tesla" , "Alibaba"]
     
@@ -34,6 +34,7 @@ class TableviewViewController: UIViewController {
     }
     
     
+    // Setting up our table view.
     private func setupTableview(){
         view.addSubview(tableView)
         tableView.anchors(top: nil, topPad: 0,
@@ -46,7 +47,7 @@ class TableviewViewController: UIViewController {
     // Giving a title and some color to the initial page.
     private func setupNavigationItem(){
         navigationItem.title = "Stock Quote"
-        navigationController?.navigationBar.barTintColor = Colors.green
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2106775641, green: 0.4190654755, blue: 0.2128750384, alpha: 1)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.black,
                                                                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 24)]
     }
@@ -65,6 +66,7 @@ extension TableviewViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        
         cell.textLabel?.text = publicCompanies[indexPath.row]
         return cell
     }

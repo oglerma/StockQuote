@@ -16,6 +16,8 @@
 		E9D5549821EAA6D2002AD4B4 /* TableviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */; };
 		E9D5549C21EAAB0F002AD4B4 /* AutoLayoutExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549B21EAAB0F002AD4B4 /* AutoLayoutExt.swift */; };
 		E9D5549E21EAE7AA002AD4B4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549D21EAE7AA002AD4B4 /* Colors.swift */; };
+		E9D554A021EBAF74002AD4B4 /* StockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5549F21EBAF74002AD4B4 /* StockAPI.swift */; };
+		E9D554A221EBB50C002AD4B4 /* CustomStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D554A121EBB50C002AD4B4 /* CustomStockTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewViewController.swift; sourceTree = "<group>"; };
 		E9D5549B21EAAB0F002AD4B4 /* AutoLayoutExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExt.swift; sourceTree = "<group>"; };
 		E9D5549D21EAE7AA002AD4B4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E9D5549F21EBAF74002AD4B4 /* StockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAPI.swift; sourceTree = "<group>"; };
+		E9D554A121EBB50C002AD4B4 /* CustomStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStockTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			children = (
 				E9D5549A21EAAAE8002AD4B4 /* Core */,
 				E9D5549721EAA6D2002AD4B4 /* TableviewViewController.swift */,
+				E9D554A121EBB50C002AD4B4 /* CustomStockTableViewCell.swift */,
+				E9D5549F21EBAF74002AD4B4 /* StockAPI.swift */,
 				E9D5549921EAA944002AD4B4 /* SupportingFiles */,
 			);
 			path = StockQuote;
@@ -281,6 +287,8 @@
 				E9D5549C21EAAB0F002AD4B4 /* AutoLayoutExt.swift in Sources */,
 				E9D5549E21EAE7AA002AD4B4 /* Colors.swift in Sources */,
 				E9D5549821EAA6D2002AD4B4 /* TableviewViewController.swift in Sources */,
+				E9D554A221EBB50C002AD4B4 /* CustomStockTableViewCell.swift in Sources */,
+				E9D554A021EBAF74002AD4B4 /* StockAPI.swift in Sources */,
 				E9D5546A21EA8E66002AD4B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
