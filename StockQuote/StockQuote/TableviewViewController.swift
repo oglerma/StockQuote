@@ -12,13 +12,16 @@ class TableviewViewController: UIViewController {
 
     let cellId = "cell"
     
+    let publicCompanies = ["Nike", "Microsoft", "Google", "Amazon" ,
+                           "eBay", "Walmart"  , "Tesla" , "Alibaba"]
+    
     // Creating the Table View Controller
     lazy var tableView: UITableView = {
         let tabView = UITableView()
         tabView.delegate = self
         tabView.dataSource = self
+        tabView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         tabView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-        tabView.translatesAutoresizingMaskIntoConstraints = false
         return tabView
     }()
     
@@ -26,24 +29,19 @@ class TableviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpTableViewController()
-        
-        
-    }
-    
-    
-    // Adding constraints to the table View controller.
-    func setUpTableViewController(){
+        setupNavigationItem()
         view.addSubview(tableView)
-        tableView.anchors(top: view.topAnchor, topPad: 0,
-                          bottom: view.bottomAnchor, bottomPad: 0,
-                          left: view.leftAnchor, leftPad: 0,
-                          right: view.rightAnchor, rightPad: 0,
-                          height: view.bounds.height, width: 0)
+        
     }
-
-
-
+    
+    // Giving a title and some color to the initial page.
+    private func setupNavigationItem(){
+        navigationItem.title = "Stock Quote"
+        navigationController?.navigationBar.barTintColor = Colors.green
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.black,
+                                                                   NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 24)]
+    }
+    
 }
 
 
@@ -53,12 +51,12 @@ class TableviewViewController: UIViewController {
 extension TableviewViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return publicCompanies.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        cell.textLabel?.text = "Index Path \(indexPath)"
+        cell.textLabel?.text = publicCompanies[indexPath.row]
         return cell
     }
     
